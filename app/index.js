@@ -13,21 +13,10 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the groundbreaking' + chalk.red('Kosmoport') + ' generator!'
+      'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
     ));
-
-    var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.someOption = props.someOption;
-
-      done();
-    }.bind(this));
+    
+    done();
   },
 
   writing: {
@@ -40,6 +29,18 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
       );
+      this.fs.copy(
+        this.templatePath('_Gruntfile.js'),
+        this.destinationPath('Gruntfile.js')
+      );
+      this.directory(
+        this.templatePath('grunt'), 
+        this.destinationPath('grunt')
+      );
+      this.mkdir('app');
+      this.mkdir('app/styles');
+      this.mkdir('app/scripts');
+      this.mkdir('app/templates');
     },
 
     projectfiles: function () {

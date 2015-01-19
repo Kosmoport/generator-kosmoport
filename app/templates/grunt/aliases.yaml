@@ -1,0 +1,20 @@
+default:
+ description: 'Project development'
+ tasks:
+  - dev
+dev:
+ description: 'Project development'
+ tasks:
+  - 'concurrent:dev'
+  - 'connect'
+  - 'watch'
+img:
+ description: 'Image optimization'
+ tasks:
+  - 'concurrent:imgOptimize'
+prod:
+ description: 'Compile for production'
+ tasks:
+  - 'concurrent:prodPrepare'
+  - 'concurrent:prodCompile'
+  - img
