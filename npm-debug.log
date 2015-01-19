@@ -1,0 +1,645 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '–g',
+1 verbose cli   'yo',
+1 verbose cli   'grunt-cli',
+1 verbose cli   'bower',
+1 verbose cli   'karma',
+1 verbose cli   'generator-angular' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ '–g', null ]
+7 verbose cache add name=undefined spec="–g" args=["–g",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '–g',
+8 verbose parsed url   path: '–g',
+8 verbose parsed url   href: '–g' }
+9 verbose cache add [ 'yo', null ]
+10 verbose cache add name=undefined spec="yo" args=["yo",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'yo',
+11 verbose parsed url   path: 'yo',
+11 verbose parsed url   href: 'yo' }
+12 verbose cache add [ 'grunt-cli', null ]
+13 verbose cache add name=undefined spec="grunt-cli" args=["grunt-cli",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'grunt-cli',
+14 verbose parsed url   path: 'grunt-cli',
+14 verbose parsed url   href: 'grunt-cli' }
+15 verbose cache add [ 'bower', null ]
+16 verbose cache add name=undefined spec="bower" args=["bower",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'bower',
+17 verbose parsed url   path: 'bower',
+17 verbose parsed url   href: 'bower' }
+18 verbose cache add [ 'karma', null ]
+19 verbose cache add name=undefined spec="karma" args=["karma",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'karma',
+20 verbose parsed url   path: 'karma',
+20 verbose parsed url   href: 'karma' }
+21 verbose cache add [ 'generator-angular', null ]
+22 verbose cache add name=undefined spec="generator-angular" args=["generator-angular",null]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: 'generator-angular',
+23 verbose parsed url   path: 'generator-angular',
+23 verbose parsed url   href: 'generator-angular' }
+24 silly lockFile 51e00793-g –g
+25 verbose lock –g C:\Users\laman_000\AppData\Roaming\npm-cache\51e00793-g.lock
+26 silly lockFile c41975d1-yo yo
+27 verbose lock yo C:\Users\laman_000\AppData\Roaming\npm-cache\c41975d1-yo.lock
+28 silly lockFile 671ef8ac-grunt-cli grunt-cli
+29 verbose lock grunt-cli C:\Users\laman_000\AppData\Roaming\npm-cache\671ef8ac-grunt-cli.lock
+30 silly lockFile 206e3ce5-bower bower
+31 verbose lock bower C:\Users\laman_000\AppData\Roaming\npm-cache\206e3ce5-bower.lock
+32 silly lockFile 512423cb-karma karma
+33 verbose lock karma C:\Users\laman_000\AppData\Roaming\npm-cache\512423cb-karma.lock
+34 silly lockFile 458e0b50-generator-angular generator-angular
+35 verbose lock generator-angular C:\Users\laman_000\AppData\Roaming\npm-cache\458e0b50-generator-angular.lock
+36 silly lockFile 51e00793-g –g
+37 silly lockFile 51e00793-g –g
+38 silly lockFile c41975d1-yo yo
+39 silly lockFile c41975d1-yo yo
+40 silly lockFile 206e3ce5-bower bower
+41 silly lockFile 206e3ce5-bower bower
+42 silly lockFile 671ef8ac-grunt-cli grunt-cli
+43 silly lockFile 671ef8ac-grunt-cli grunt-cli
+44 verbose addNamed [ '–g', '' ]
+45 verbose addNamed [ null, '*' ]
+46 silly lockFile 72e0e7f9-g –g@
+47 verbose lock –g@ C:\Users\laman_000\AppData\Roaming\npm-cache\72e0e7f9-g.lock
+48 silly lockFile 458e0b50-generator-angular generator-angular
+49 silly lockFile 458e0b50-generator-angular generator-angular
+50 silly lockFile 512423cb-karma karma
+51 silly lockFile 512423cb-karma karma
+52 verbose addNamed [ 'yo', '' ]
+53 verbose addNamed [ null, '*' ]
+54 silly lockFile d937c28e-yo yo@
+55 verbose lock yo@ C:\Users\laman_000\AppData\Roaming\npm-cache\d937c28e-yo.lock
+56 verbose addNamed [ 'bower', '' ]
+57 verbose addNamed [ null, '*' ]
+58 silly lockFile 1240aab1-bower bower@
+59 verbose lock bower@ C:\Users\laman_000\AppData\Roaming\npm-cache\1240aab1-bower.lock
+60 verbose addNamed [ 'grunt-cli', '' ]
+61 verbose addNamed [ null, '*' ]
+62 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+63 verbose lock grunt-cli@ C:\Users\laman_000\AppData\Roaming\npm-cache\d63f3d0b-grunt-cli.lock
+64 verbose addNamed [ 'generator-angular', '' ]
+65 verbose addNamed [ null, '*' ]
+66 silly lockFile 0345f598-generator-angular generator-angular@
+67 verbose lock generator-angular@ C:\Users\laman_000\AppData\Roaming\npm-cache\0345f598-generator-angular.lock
+68 verbose addNamed [ 'karma', '' ]
+69 verbose addNamed [ null, '*' ]
+70 silly lockFile cd7961bb-karma karma@
+71 verbose lock karma@ C:\Users\laman_000\AppData\Roaming\npm-cache\cd7961bb-karma.lock
+72 silly addNameRange { name: '–g', range: '*', hasData: false }
+73 silly addNameRange { name: 'yo', range: '*', hasData: false }
+74 silly addNameRange { name: 'bower', range: '*', hasData: false }
+75 verbose request where is /–g
+76 verbose request registry https://registry.npmjs.org/
+77 verbose request id bdad7124e00a6924
+78 verbose url raw /–g
+79 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%93g' ]
+80 verbose url resolved https://registry.npmjs.org/%E2%80%93g
+81 verbose request where is https://registry.npmjs.org/%E2%80%93g
+82 info trying registry request attempt 1 at 10:31:02
+83 http GET https://registry.npmjs.org/%E2%80%93g
+84 silly addNameRange { name: 'grunt-cli', range: '*', hasData: false }
+85 silly addNameRange { name: 'generator-angular', range: '*', hasData: false }
+86 verbose request where is /yo
+87 verbose request registry https://registry.npmjs.org/
+88 verbose url raw /yo
+89 verbose url resolving [ 'https://registry.npmjs.org/', './yo' ]
+90 verbose url resolved https://registry.npmjs.org/yo
+91 verbose request where is https://registry.npmjs.org/yo
+92 info trying registry request attempt 1 at 10:31:02
+93 http GET https://registry.npmjs.org/yo
+94 silly addNameRange { name: 'karma', range: '*', hasData: false }
+95 verbose request where is /generator-angular
+96 verbose request registry https://registry.npmjs.org/
+97 verbose url raw /generator-angular
+98 verbose url resolving [ 'https://registry.npmjs.org/', './generator-angular' ]
+99 verbose url resolved https://registry.npmjs.org/generator-angular
+100 verbose request where is https://registry.npmjs.org/generator-angular
+101 info trying registry request attempt 1 at 10:31:02
+102 http GET https://registry.npmjs.org/generator-angular
+103 verbose request where is /karma
+104 verbose request registry https://registry.npmjs.org/
+105 verbose url raw /karma
+106 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+107 verbose url resolved https://registry.npmjs.org/karma
+108 verbose request where is https://registry.npmjs.org/karma
+109 info trying registry request attempt 1 at 10:31:02
+110 http GET https://registry.npmjs.org/karma
+111 verbose request where is /grunt-cli
+112 verbose request registry https://registry.npmjs.org/
+113 verbose url raw /grunt-cli
+114 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+115 verbose url resolved https://registry.npmjs.org/grunt-cli
+116 verbose request where is https://registry.npmjs.org/grunt-cli
+117 info trying registry request attempt 1 at 10:31:02
+118 verbose etag "2X85834MK9JAQPL6CYHZESKEJ"
+119 http GET https://registry.npmjs.org/grunt-cli
+120 verbose request where is /bower
+121 verbose request registry https://registry.npmjs.org/
+122 verbose url raw /bower
+123 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+124 verbose url resolved https://registry.npmjs.org/bower
+125 verbose request where is https://registry.npmjs.org/bower
+126 info trying registry request attempt 1 at 10:31:02
+127 verbose etag "D3X3IVCHE03MMDYBSQBR8X5TF"
+128 http GET https://registry.npmjs.org/bower
+129 http 200 https://registry.npmjs.org/grunt-cli
+130 silly registry.get cb [ 200,
+130 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:00 GMT',
+130 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+130 silly registry.get     etag: '"PMJ2R0HT9BY7HUAEU7E6BPRF"',
+130 silly registry.get     'content-type': 'application/json',
+130 silly registry.get     'cache-control': 'max-age=60',
+130 silly registry.get     'content-length': '20247',
+130 silly registry.get     'accept-ranges': 'bytes',
+130 silly registry.get     via: '1.1 varnish',
+130 silly registry.get     age: '20',
+130 silly registry.get     'x-served-by': 'cache-fra1222-FRA',
+130 silly registry.get     'x-cache': 'HIT',
+130 silly registry.get     'x-cache-hits': '1',
+130 silly registry.get     'x-timer': 'S1421641860.668087,VS0,VE0',
+130 silly registry.get     vary: 'Accept',
+130 silly registry.get     'keep-alive': 'timeout=10, max=50',
+130 silly registry.get     connection: 'Keep-Alive' } ]
+131 silly addNameRange number 2 { name: 'grunt-cli', range: '*', hasData: true }
+132 silly addNameRange versions [ 'grunt-cli',
+132 silly addNameRange   [ '0.1.0',
+132 silly addNameRange     '0.1.1',
+132 silly addNameRange     '0.1.2',
+132 silly addNameRange     '0.1.3',
+132 silly addNameRange     '0.1.4',
+132 silly addNameRange     '0.1.5',
+132 silly addNameRange     '0.1.6',
+132 silly addNameRange     '0.1.7',
+132 silly addNameRange     '0.1.8',
+132 silly addNameRange     '0.1.9',
+132 silly addNameRange     '0.1.10',
+132 silly addNameRange     '0.1.11',
+132 silly addNameRange     '0.1.12',
+132 silly addNameRange     '0.1.13' ] ]
+133 verbose addNamed [ 'grunt-cli', '0.1.13' ]
+134 verbose addNamed [ '0.1.13', '0.1.13' ]
+135 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+136 verbose lock grunt-cli@0.1.13 C:\Users\laman_000\AppData\Roaming\npm-cache\28997503-grunt-cli-0-1-13.lock
+137 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+138 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+139 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+140 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+141 http 404 https://registry.npmjs.org/%E2%80%93g
+142 verbose headers { date: 'Mon, 19 Jan 2015 04:31:01 GMT',
+142 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+142 verbose headers   'content-type': 'application/json',
+142 verbose headers   'cache-control': 'max-age=0',
+142 verbose headers   'content-length': '52',
+142 verbose headers   'accept-ranges': 'bytes',
+142 verbose headers   via: '1.1 varnish',
+142 verbose headers   age: '0',
+142 verbose headers   'x-served-by': 'cache-fra1243-FRA',
+142 verbose headers   'x-cache': 'MISS',
+142 verbose headers   'x-cache-hits': '0',
+142 verbose headers   'x-timer': 'S1421641860.633391,VS0,VE426',
+142 verbose headers   'keep-alive': 'timeout=10, max=50',
+142 verbose headers   connection: 'Keep-Alive' }
+143 silly registry.get cb [ 404,
+143 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:01 GMT',
+143 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+143 silly registry.get     'content-type': 'application/json',
+143 silly registry.get     'cache-control': 'max-age=0',
+143 silly registry.get     'content-length': '52',
+143 silly registry.get     'accept-ranges': 'bytes',
+143 silly registry.get     via: '1.1 varnish',
+143 silly registry.get     age: '0',
+143 silly registry.get     'x-served-by': 'cache-fra1243-FRA',
+143 silly registry.get     'x-cache': 'MISS',
+143 silly registry.get     'x-cache-hits': '0',
+143 silly registry.get     'x-timer': 'S1421641860.633391,VS0,VE426',
+143 silly registry.get     'keep-alive': 'timeout=10, max=50',
+143 silly registry.get     connection: 'Keep-Alive' } ]
+144 silly lockFile 72e0e7f9-g –g@
+145 silly lockFile 72e0e7f9-g –g@
+146 http 200 https://registry.npmjs.org/bower
+147 silly registry.get cb [ 200,
+147 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:00 GMT',
+147 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+147 silly registry.get     etag: '"EYZLQLD55IJ9S9BGCWNO6TMUV"',
+147 silly registry.get     'content-type': 'application/json',
+147 silly registry.get     'cache-control': 'max-age=60',
+147 silly registry.get     'content-length': '106026',
+147 silly registry.get     'accept-ranges': 'bytes',
+147 silly registry.get     via: '1.1 varnish',
+147 silly registry.get     age: '50',
+147 silly registry.get     'x-served-by': 'cache-fra1222-FRA',
+147 silly registry.get     'x-cache': 'HIT',
+147 silly registry.get     'x-cache-hits': '1',
+147 silly registry.get     'x-timer': 'S1421641860.972099,VS0,VE0',
+147 silly registry.get     vary: 'Accept',
+147 silly registry.get     'keep-alive': 'timeout=10, max=49',
+147 silly registry.get     connection: 'Keep-Alive' } ]
+148 silly addNameRange number 2 { name: 'bower', range: '*', hasData: true }
+149 silly addNameRange versions [ 'bower',
+149 silly addNameRange   [ '0.1.0',
+149 silly addNameRange     '0.1.2',
+149 silly addNameRange     '0.1.3',
+149 silly addNameRange     '0.2.0',
+149 silly addNameRange     '0.3.0',
+149 silly addNameRange     '0.3.1',
+149 silly addNameRange     '0.3.2',
+149 silly addNameRange     '0.4.0',
+149 silly addNameRange     '0.5.0',
+149 silly addNameRange     '0.5.1',
+149 silly addNameRange     '0.6.0',
+149 silly addNameRange     '0.6.1',
+149 silly addNameRange     '0.6.2',
+149 silly addNameRange     '0.6.3',
+149 silly addNameRange     '0.6.4',
+149 silly addNameRange     '0.6.5',
+149 silly addNameRange     '0.6.6',
+149 silly addNameRange     '0.6.7',
+149 silly addNameRange     '0.6.8',
+149 silly addNameRange     '0.7.0',
+149 silly addNameRange     '0.7.1',
+149 silly addNameRange     '0.8.0',
+149 silly addNameRange     '0.8.1',
+149 silly addNameRange     '0.8.2',
+149 silly addNameRange     '0.8.3',
+149 silly addNameRange     '0.8.4',
+149 silly addNameRange     '0.8.5',
+149 silly addNameRange     '0.8.6',
+149 silly addNameRange     '0.9.0',
+149 silly addNameRange     '0.9.1',
+149 silly addNameRange     '0.9.2',
+149 silly addNameRange     '0.10.0',
+149 silly addNameRange     '1.0.0',
+149 silly addNameRange     '1.0.1',
+149 silly addNameRange     '1.0.2',
+149 silly addNameRange     '1.0.3',
+149 silly addNameRange     '1.1.0',
+149 silly addNameRange     '1.1.1',
+149 silly addNameRange     '1.1.2',
+149 silly addNameRange     '1.2.0',
+149 silly addNameRange     '1.2.1',
+149 silly addNameRange     '1.2.2',
+149 silly addNameRange     '1.2.3',
+149 silly addNameRange     '1.2.4',
+149 silly addNameRange     '1.2.5',
+149 silly addNameRange     '1.2.6',
+149 silly addNameRange     '1.2.7',
+149 silly addNameRange     '1.2.8',
+149 silly addNameRange     '1.3.0',
+149 silly addNameRange     '1.3.1',
+149 silly addNameRange     '1.3.2',
+149 silly addNameRange     '1.3.3',
+149 silly addNameRange     '1.3.4',
+149 silly addNameRange     '1.3.5',
+149 silly addNameRange     '1.3.6',
+149 silly addNameRange     '1.3.7',
+149 silly addNameRange     '1.3.8',
+149 silly addNameRange     '1.3.9',
+149 silly addNameRange     '1.3.10',
+149 silly addNameRange     '1.3.11',
+149 silly addNameRange     '1.3.12' ] ]
+150 verbose addNamed [ 'bower', '1.3.12' ]
+151 verbose addNamed [ '1.3.12', '1.3.12' ]
+152 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+153 verbose lock bower@1.3.12 C:\Users\laman_000\AppData\Roaming\npm-cache\9819431c-bower-1-3-12.lock
+154 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+155 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+156 silly lockFile 1240aab1-bower bower@
+157 silly lockFile 1240aab1-bower bower@
+158 http 200 https://registry.npmjs.org/generator-angular
+159 silly registry.get cb [ 200,
+159 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:01 GMT',
+159 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+159 silly registry.get     etag: '"29UJOU5L18LXHYO4E7UBQGMQP"',
+159 silly registry.get     'content-type': 'application/json',
+159 silly registry.get     'cache-control': 'max-age=60',
+159 silly registry.get     'content-length': '59861',
+159 silly registry.get     'accept-ranges': 'bytes',
+159 silly registry.get     via: '1.1 varnish',
+159 silly registry.get     age: '0',
+159 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+159 silly registry.get     'x-cache': 'HIT',
+159 silly registry.get     'x-cache-hits': '1',
+159 silly registry.get     'x-timer': 'S1421641860.704478,VS0,VE714',
+159 silly registry.get     vary: 'Accept',
+159 silly registry.get     'keep-alive': 'timeout=10, max=50',
+159 silly registry.get     connection: 'Keep-Alive' } ]
+160 http 200 https://registry.npmjs.org/yo
+161 silly registry.get cb [ 200,
+161 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:01 GMT',
+161 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+161 silly registry.get     etag: '"9BT3TBTW27114OOP5QB1HUXOG"',
+161 silly registry.get     'content-type': 'application/json',
+161 silly registry.get     'cache-control': 'max-age=60',
+161 silly registry.get     'content-length': '53626',
+161 silly registry.get     'accept-ranges': 'bytes',
+161 silly registry.get     via: '1.1 varnish',
+161 silly registry.get     age: '0',
+161 silly registry.get     'x-served-by': 'cache-fra1232-FRA',
+161 silly registry.get     'x-cache': 'HIT',
+161 silly registry.get     'x-cache-hits': '1',
+161 silly registry.get     'x-timer': 'S1421641860.834849,VS0,VE693',
+161 silly registry.get     vary: 'Accept',
+161 silly registry.get     'keep-alive': 'timeout=10, max=50',
+161 silly registry.get     connection: 'Keep-Alive' } ]
+162 silly addNameRange number 2 { name: 'generator-angular', range: '*', hasData: true }
+163 silly addNameRange versions [ 'generator-angular',
+163 silly addNameRange   [ '0.1.0',
+163 silly addNameRange     '0.1.1',
+163 silly addNameRange     '0.1.2',
+163 silly addNameRange     '0.1.3',
+163 silly addNameRange     '0.1.4',
+163 silly addNameRange     '0.1.5',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.2.2',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '0.4.0',
+163 silly addNameRange     '0.5.0',
+163 silly addNameRange     '0.5.1',
+163 silly addNameRange     '0.6.0-rc.1',
+163 silly addNameRange     '0.6.0-rc.2',
+163 silly addNameRange     '0.6.0',
+163 silly addNameRange     '0.7.0',
+163 silly addNameRange     '0.7.1',
+163 silly addNameRange     '0.8.0',
+163 silly addNameRange     '0.9.0-0',
+163 silly addNameRange     '0.9.0-1',
+163 silly addNameRange     '0.9.0',
+163 silly addNameRange     '0.9.1',
+163 silly addNameRange     '0.9.2',
+163 silly addNameRange     '0.9.3',
+163 silly addNameRange     '0.9.5',
+163 silly addNameRange     '0.9.6',
+163 silly addNameRange     '0.9.7',
+163 silly addNameRange     '0.9.8',
+163 silly addNameRange     '0.10.0' ] ]
+164 verbose addNamed [ 'generator-angular', '0.10.0' ]
+165 verbose addNamed [ '0.10.0', '0.10.0' ]
+166 silly lockFile 5c2f16cf-generator-angular-0-10-0 generator-angular@0.10.0
+167 verbose lock generator-angular@0.10.0 C:\Users\laman_000\AppData\Roaming\npm-cache\5c2f16cf-generator-angular-0-10-0.lock
+168 silly addNameRange number 2 { name: 'yo', range: '*', hasData: true }
+169 silly addNameRange versions [ 'yo',
+169 silly addNameRange   [ '1.0.0-beta.1',
+169 silly addNameRange     '1.0.0-beta.2',
+169 silly addNameRange     '1.0.0-beta.3',
+169 silly addNameRange     '1.0.0-beta.4',
+169 silly addNameRange     '1.0.0-beta.5',
+169 silly addNameRange     '1.0.0-beta.6',
+169 silly addNameRange     '1.0.0-beta.7',
+169 silly addNameRange     '1.0.0-rc.1',
+169 silly addNameRange     '1.0.0-rc.1.1',
+169 silly addNameRange     '1.0.0-rc.1.2',
+169 silly addNameRange     '1.0.0-rc.1.3',
+169 silly addNameRange     '1.0.0-rc.1.4',
+169 silly addNameRange     '1.0.0',
+169 silly addNameRange     '1.0.1',
+169 silly addNameRange     '1.0.2',
+169 silly addNameRange     '1.0.3',
+169 silly addNameRange     '1.0.4',
+169 silly addNameRange     '1.0.5',
+169 silly addNameRange     '1.0.6',
+169 silly addNameRange     '1.0.7-pre.1',
+169 silly addNameRange     '1.0.7-pre.2',
+169 silly addNameRange     '1.0.7-pre.3',
+169 silly addNameRange     '1.1.0',
+169 silly addNameRange     '1.1.1',
+169 silly addNameRange     '1.1.2',
+169 silly addNameRange     '1.2.0',
+169 silly addNameRange     '1.2.1',
+169 silly addNameRange     '1.3.0',
+169 silly addNameRange     '1.3.2',
+169 silly addNameRange     '1.3.3' ] ]
+170 verbose addNamed [ 'yo', '1.3.3' ]
+171 verbose addNamed [ '1.3.3', '1.3.3' ]
+172 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+173 verbose lock yo@1.3.3 C:\Users\laman_000\AppData\Roaming\npm-cache\68164736-yo-1-3-3.lock
+174 silly lockFile 7cffb57c-lar-generator-angular-0-10-0-tgz https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz
+175 verbose lock https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz C:\Users\laman_000\AppData\Roaming\npm-cache\7cffb57c-lar-generator-angular-0-10-0-tgz.lock
+176 silly lockFile f34d3fe9-gistry-npmjs-org-yo-yo-1-3-3-tgz https://registry.npmjs.org/yo/-/yo-1.3.3.tgz
+177 verbose lock https://registry.npmjs.org/yo/-/yo-1.3.3.tgz C:\Users\laman_000\AppData\Roaming\npm-cache\f34d3fe9-gistry-npmjs-org-yo-yo-1-3-3-tgz.lock
+178 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz',
+178 verbose addRemoteTarball   '5eac8abc723da386d0fe6a4e722b06948d7b7d24' ]
+179 verbose addRemoteTarball [ 'https://registry.npmjs.org/yo/-/yo-1.3.3.tgz',
+179 verbose addRemoteTarball   '732b053d6da401965ef146fe914d014474c37c1b' ]
+180 info retry fetch attempt 1 at 10:31:04
+181 verbose fetch to= C:\Users\LAMAN_~1\AppData\Local\Temp\npm-10876-Ut8pEDiu\registry.npmjs.org\yo\-\yo-1.3.3.tgz
+182 http GET https://registry.npmjs.org/yo/-/yo-1.3.3.tgz
+183 info retry fetch attempt 1 at 10:31:04
+184 verbose fetch to= C:\Users\LAMAN_~1\AppData\Local\Temp\npm-10876-Ut8pEDiu\registry.npmjs.org\generator-angular\-\generator-angular-0.10.0.tgz
+185 http GET https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz
+186 http 200 https://registry.npmjs.org/yo/-/yo-1.3.3.tgz
+187 http 200 https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz
+188 silly lockFile f34d3fe9-gistry-npmjs-org-yo-yo-1-3-3-tgz https://registry.npmjs.org/yo/-/yo-1.3.3.tgz
+189 silly lockFile f34d3fe9-gistry-npmjs-org-yo-yo-1-3-3-tgz https://registry.npmjs.org/yo/-/yo-1.3.3.tgz
+190 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+191 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+192 silly lockFile d937c28e-yo yo@
+193 silly lockFile d937c28e-yo yo@
+194 http 200 https://registry.npmjs.org/karma
+195 silly registry.get cb [ 200,
+195 silly registry.get   { date: 'Mon, 19 Jan 2015 04:31:00 GMT',
+195 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+195 silly registry.get     etag: '"9WEKZT9UVRWJ04W6BEURJBX5K"',
+195 silly registry.get     'content-type': 'application/json',
+195 silly registry.get     'cache-control': 'max-age=60',
+195 silly registry.get     'content-length': '636680',
+195 silly registry.get     'accept-ranges': 'bytes',
+195 silly registry.get     via: '1.1 varnish',
+195 silly registry.get     age: '53',
+195 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+195 silly registry.get     'x-cache': 'HIT',
+195 silly registry.get     'x-cache-hits': '1',
+195 silly registry.get     'x-timer': 'S1421641860.694491,VS0,VE3',
+195 silly registry.get     vary: 'Accept',
+195 silly registry.get     'keep-alive': 'timeout=10, max=50',
+195 silly registry.get     connection: 'Keep-Alive' } ]
+196 silly addNameRange number 2 { name: 'karma', range: '*', hasData: true }
+197 silly addNameRange versions [ 'karma',
+197 silly addNameRange   [ '0.8.0',
+197 silly addNameRange     '0.9.0-dart',
+197 silly addNameRange     '0.8.1',
+197 silly addNameRange     '0.8.2',
+197 silly addNameRange     '0.8.3',
+197 silly addNameRange     '0.9.0',
+197 silly addNameRange     '0.8.4',
+197 silly addNameRange     '0.9.1',
+197 silly addNameRange     '0.8.5',
+197 silly addNameRange     '0.9.2',
+197 silly addNameRange     '0.9.2-dart',
+197 silly addNameRange     '0.9.3',
+197 silly addNameRange     '0.8.6',
+197 silly addNameRange     '0.9.4',
+197 silly addNameRange     '0.8.7',
+197 silly addNameRange     '0.9.5',
+197 silly addNameRange     '0.9.6',
+197 silly addNameRange     '0.8.8',
+197 silly addNameRange     '0.9.7',
+197 silly addNameRange     '0.9.8',
+197 silly addNameRange     '0.10.0',
+197 silly addNameRange     '0.10.1',
+197 silly addNameRange     '0.10.2',
+197 silly addNameRange     '0.11.0',
+197 silly addNameRange     '0.11.1',
+197 silly addNameRange     '0.10.3',
+197 silly addNameRange     '0.10.4',
+197 silly addNameRange     '0.11.2',
+197 silly addNameRange     '0.11.3',
+197 silly addNameRange     '0.10.5',
+197 silly addNameRange     '0.11.4',
+197 silly addNameRange     '0.11.5',
+197 silly addNameRange     '0.10.6',
+197 silly addNameRange     '0.11.6',
+197 silly addNameRange     '0.10.7',
+197 silly addNameRange     '0.11.7',
+197 silly addNameRange     '0.11.8',
+197 silly addNameRange     '0.11.9',
+197 silly addNameRange     '0.10.8',
+197 silly addNameRange     '0.11.10',
+197 silly addNameRange     '0.11.11',
+197 silly addNameRange     '0.11.12',
+197 silly addNameRange     '0.11.11-dev',
+197 silly addNameRange     '0.10.9',
+197 silly addNameRange     '0.11.12-dev',
+197 silly addNameRange     '0.11.12-dev2',
+197 silly addNameRange     '0.11.13',
+197 silly addNameRange     '0.11.14',
+197 silly addNameRange     '0.12.0',
+197 silly addNameRange     '0.10.10',
+197 silly addNameRange     '0.12.1',
+197 silly addNameRange     '0.12.2',
+197 silly addNameRange     '0.12.3',
+197 silly addNameRange     '0.12.4',
+197 silly addNameRange     '0.12.5',
+197 silly addNameRange     '0.12.6',
+197 silly addNameRange     '0.12.6-beta-43e6e28',
+197 silly addNameRange     '0.12.7',
+197 silly addNameRange     '0.12.8',
+197 silly addNameRange     '0.12.9',
+197 silly addNameRange     '0.12.10',
+197 silly addNameRange     '0.12.11',
+197 silly addNameRange     '0.12.12',
+197 silly addNameRange     '0.12.11-beta-3029418',
+197 silly addNameRange     '0.12.13',
+197 silly addNameRange     '0.12.14',
+197 silly addNameRange     '0.12.15',
+197 silly addNameRange     '0.12.16',
+197 silly addNameRange     '0.12.16-beta-905422d',
+197 silly addNameRange     '0.12.17',
+197 silly addNameRange     '0.12.18',
+197 silly addNameRange     '0.12.19',
+197 silly addNameRange     '0.12.20',
+197 silly addNameRange     '0.12.21',
+197 silly addNameRange     '0.12.22',
+197 silly addNameRange     '0.12.23',
+197 silly addNameRange     '0.12.24',
+197 silly addNameRange     '0.12.24-beta-6cf7955',
+197 silly addNameRange     '0.12.25',
+197 silly addNameRange     '0.12.25-beta-37a7958',
+197 silly addNameRange     '0.12.25-beta-ad5bc24',
+197 silly addNameRange     '0.12.26',
+197 silly addNameRange     '0.12.27',
+197 silly addNameRange     '0.12.28',
+197 silly addNameRange     '0.12.28-beta-b9be580',
+197 silly addNameRange     '0.12.29',
+197 silly addNameRange     '0.12.30',
+197 silly addNameRange     '0.12.31',
+197 silly addNameRange     '0.12.28-beta-f65c864' ] ]
+198 verbose addNamed [ 'karma', '0.12.31' ]
+199 verbose addNamed [ '0.12.31', '0.12.31' ]
+200 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+201 verbose lock karma@0.12.31 C:\Users\laman_000\AppData\Roaming\npm-cache\feea9de1-karma-0-12-31.lock
+202 silly lockFile 479e7a6c-pmjs-org-karma-karma-0-12-31-tgz https://registry.npmjs.org/karma/-/karma-0.12.31.tgz
+203 verbose lock https://registry.npmjs.org/karma/-/karma-0.12.31.tgz C:\Users\laman_000\AppData\Roaming\npm-cache\479e7a6c-pmjs-org-karma-karma-0-12-31-tgz.lock
+204 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma/-/karma-0.12.31.tgz',
+204 verbose addRemoteTarball   '806aa7c2acb13a39edb9374a7a477e643a5e94c9' ]
+205 info retry fetch attempt 1 at 10:31:05
+206 verbose fetch to= C:\Users\LAMAN_~1\AppData\Local\Temp\npm-10876-Ut8pEDiu\registry.npmjs.org\karma\-\karma-0.12.31.tgz
+207 http GET https://registry.npmjs.org/karma/-/karma-0.12.31.tgz
+208 silly lockFile 7cffb57c-lar-generator-angular-0-10-0-tgz https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz
+209 silly lockFile 7cffb57c-lar-generator-angular-0-10-0-tgz https://registry.npmjs.org/generator-angular/-/generator-angular-0.10.0.tgz
+210 silly lockFile 5c2f16cf-generator-angular-0-10-0 generator-angular@0.10.0
+211 silly lockFile 5c2f16cf-generator-angular-0-10-0 generator-angular@0.10.0
+212 silly lockFile 0345f598-generator-angular generator-angular@
+213 silly lockFile 0345f598-generator-angular generator-angular@
+214 http 200 https://registry.npmjs.org/karma/-/karma-0.12.31.tgz
+215 silly lockFile 479e7a6c-pmjs-org-karma-karma-0-12-31-tgz https://registry.npmjs.org/karma/-/karma-0.12.31.tgz
+216 silly lockFile 479e7a6c-pmjs-org-karma-karma-0-12-31-tgz https://registry.npmjs.org/karma/-/karma-0.12.31.tgz
+217 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+218 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+219 silly lockFile cd7961bb-karma karma@
+220 silly lockFile cd7961bb-karma karma@
+221 error 404 404 Not Found: %E2%80%93g
+221 error 404
+221 error 404 '%E2%80%93g' is not in the npm registry.
+221 error 404 You should bug the author to publish it
+221 error 404 It was specified as a dependency of 'generator-kosmoport'
+221 error 404
+221 error 404 Note that you can also install from a
+221 error 404 tarball, folder, or http url, or git url.
+222 error System Windows_NT 6.2.9200
+223 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "–g" "yo" "grunt-cli" "bower" "karma" "generator-angular"
+224 error cwd C:\Users\laman_000\Documents\My Work\generator\generator-kosmoport
+225 error node -v v0.10.35
+226 error npm -v 1.4.28
+227 error code E404
+228 verbose exit [ 1, true ]

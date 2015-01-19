@@ -6,10 +6,15 @@
   "main": "app/index.js",
   "repository": "Kosmoport/generator-kosmoport",
   "author": {
-    "name": "Nikita Bayev",
+    "name": "Nikita Bayev", 
     "email": "nikita@bayev.kz",
     "url": "https://github.com/drugoi"
   },
+    "contributors": [{
+    "name": "Daria Gorbovskaya", 
+    "email": "melloo18@gmail.com",
+    "url": "https://github.com/lamantenok"
+  }],
   "engines": {
     "node": ">=0.10.0"
   },

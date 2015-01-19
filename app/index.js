@@ -37,8 +37,11 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('grunt'), 
         this.destinationPath('grunt')
       );
+      this.directory(
+        this.templatePath('styles'), 
+        this.destinationPath('app/styles')
+      );
       this.mkdir('app');
-      this.mkdir('app/styles');
       this.mkdir('app/scripts');
       this.mkdir('app/templates');
     },
