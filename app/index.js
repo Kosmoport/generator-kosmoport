@@ -33,6 +33,10 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_Gruntfile.js'),
         this.destinationPath('Gruntfile.js')
       );
+      this.fs.copy(
+        this.templatePath('_index.html'),
+        this.destinationPath('index.html')
+      );      
       this.directory(
         this.templatePath('grunt'), 
         this.destinationPath('grunt')
@@ -44,6 +48,8 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('app');
       this.mkdir('app/scripts');
       this.mkdir('app/templates');
+      this.mkdir('app/images');
+      this.mkdir('app/fonts');
     },
 
     projectfiles: function () {
