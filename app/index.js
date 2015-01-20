@@ -14,9 +14,18 @@ module.exports = yeoman.generators.Base.extend({
     // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
-    ));
-    
-    done();
+    ));    
+    var prompts = [{
+      type:input,
+      name: 'blocks',
+      message:  'What blocks you will use in your project?Blocks:'
+    },];
+
+    this.prompt(prompts, function (props) {
+    this.blocks = props.blocks;
+
+      done();
+    }.bind(this));
   },
 
   writing: {
@@ -36,6 +45,10 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_index.html'),
         this.destinationPath('index.html')
+      );
+      this.fs.copy(
+        this.templatePath('styles/_blocks.scss'),
+        this.destinationPath(this.blocks + '.scss')
       );      
       this.directory(
         this.templatePath('grunt'), 
