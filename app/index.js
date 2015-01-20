@@ -16,13 +16,13 @@ module.exports = yeoman.generators.Base.extend({
       'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
     ));    
     var prompts = [{
-      type:input,
+      type:'input',
       name: 'blocks',
       message:  'What blocks you will use in your project?Blocks:'
     },];
 
     this.prompt(prompts, function (props) {
-    this.blocks = props.blocks;
+    this.blocks = props.blocks.split(' ');
 
       done();
     }.bind(this));
@@ -45,11 +45,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_index.html'),
         this.destinationPath('index.html')
-      );
-      this.fs.copy(
-        this.templatePath('styles/_blocks.scss'),
-        this.destinationPath(this.blocks + '.scss')
-      );      
+      );  
       this.directory(
         this.templatePath('grunt'), 
         this.destinationPath('grunt')
@@ -63,6 +59,17 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('app/templates');
       this.mkdir('app/images');
       this.mkdir('app/fonts');
+      this.mkdir('styles/blocks');
+
+      var blocks=[];
+      for (var b in this.blocks) {
+        this.write('styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
+        blocks.push('@import url(styles/blocks/_' + this.blocks[b] + '.scss);\n');
+      }
+      
+      blocks = blocks.toString().replace(/,/g, '');
+      
+      this.write('styles/styles.css', blocks);
     },
 
     projectfiles: function () {
