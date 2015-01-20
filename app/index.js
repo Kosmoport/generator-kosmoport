@@ -64,7 +64,7 @@ module.exports = yeoman.generators.Base.extend({
       var blocks=[];
       for (var b in this.blocks) {
         this.write('styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
-        blocks.push('@import url(styles/blocks/_' + this.blocks[b] + '.scss);\n');
+        blocks.push('@import "' + this.blocks[b] + '";\n');
       }
       
       blocks = blocks.toString().replace(/,/g, '');
