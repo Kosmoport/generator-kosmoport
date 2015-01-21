@@ -57,14 +57,14 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('app');
       this.mkdir('app/scripts');
       this.mkdir('app/templates');
-      this.mkdir('app/images');
+      this.mkdir('app/images/icons');
       this.mkdir('app/fonts');
       this.mkdir('styles/blocks');
 
       var blocks=[];
       for (var b in this.blocks) {
         this.write('styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
-        blocks.push('@import "' + this.blocks[b] + '";\n');
+        blocks.push('@import "blocks/'+ this.blocks[b] + '";\n');
       }
       
       blocks = blocks.toString().replace(/,/g, '');
