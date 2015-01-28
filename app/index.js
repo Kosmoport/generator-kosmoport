@@ -32,10 +32,10 @@ module.exports = yeoman.generators.Base.extend({
       var blocks = [];
       for (var b in this.blocks) {
         this.write('app/styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
-        blocks.push('@import "blocks/'+ this.blocks[b] + '";\n');
+        blocks.push('@import \'_'+ this.blocks[b] + '\';\n');
       }
       blocks = blocks.toString().replace(/,/g, '');
-      //this.write('app/styles/styles.scss', styles.replace(styles, styles + '\n' + blocks));
+      this.write('app/styles/blocks/blocks.scss', blocks);
     },
     app: function () {
       this.fs.copy(
@@ -68,9 +68,6 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('app/images/icons');
       this.mkdir('app/fonts');
       this.mkdir('app/styles/blocks');
-      
-      var styles = this.readFileAsString('app/styles/styles.scss');
-      console.log(styles);
     },
     projectfiles: function() {
       this.fs.copy(
