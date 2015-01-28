@@ -11,14 +11,13 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
 
-    // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
     ));    
     var prompts = [{
       type:'input',
       name: 'blocks',
-      message:  'What blocks you will use in your project?Blocks:'
+      message:  'What blocks you will use in your project? \n  Blocks:'
     },];
 
     this.prompt(prompts, function (props) {
@@ -29,6 +28,15 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: {
+    styleFiles: function() {
+      var blocks = [];
+      for (var b in this.blocks) {
+        this.write('app/styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
+        blocks.push('@import "blocks/'+ this.blocks[b] + '";\n');
+      }
+      blocks = blocks.toString().replace(/,/g, '');
+      //this.write('app/styles/styles.scss', styles.replace(styles, styles + '\n' + blocks));
+    },
     app: function () {
       this.fs.copy(
         this.templatePath('_package.json'),
@@ -59,20 +67,12 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('app/templates');
       this.mkdir('app/images/icons');
       this.mkdir('app/fonts');
-      this.mkdir('styles/blocks');
-
-      var blocks=[];
-      for (var b in this.blocks) {
-        this.write('styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
-        blocks.push('@import "blocks/'+ this.blocks[b] + '";\n');
-      }
+      this.mkdir('app/styles/blocks');
       
-      blocks = blocks.toString().replace(/,/g, '');
-      
-      this.write('styles/styles.css', blocks);
+      var styles = this.readFileAsString('app/styles/styles.scss');
+      console.log(styles);
     },
-
-    projectfiles: function () {
+    projectfiles: function() {
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
