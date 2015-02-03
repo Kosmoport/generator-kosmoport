@@ -1,7 +1,7 @@
 {
   "name": "generator-kosmoport",
   "version": "0.0.1",
-  "description": "Generator for static sites",
+  "description": "Generator for our static sites",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "Kosmoport/generator-kosmoport",
