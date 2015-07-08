@@ -1,4 +1,6 @@
-var scripts = ['app/bower/jquery/dist/jquery.min.js', 'app/bower/bxslider-4/jquery.bxslider.min.js', 'app/scripts/**/*.js'];
+var scripts = [
+  'app/scripts/**/*.js'
+];
 
 module.exports = {
   options: {
@@ -28,5 +30,5 @@ module.exports = {
     files: {
       'dist/js/app.min.js': scripts
     }
-  } 
+  }
 };

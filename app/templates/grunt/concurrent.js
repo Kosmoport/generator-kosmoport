@@ -1,9 +1,9 @@
 module.exports = {
-  
+
   options: {
     limit: 5
   },
-  
+
   // Tasks for Development
   dev: [
     'uglify:dev',
@@ -11,15 +11,19 @@ module.exports = {
     'sass:dev',
     'autoprefixer:dev'
   ],
-  
+
   devServer: [
     'watch'
   ],
 
   // Tasks for Production
   prodPrepare: [
+    'clean:prod',
+    'copy:prod',
+    'sass:prod'
+  ],
+  prodPreCompile: [
     'jshint',
-    'sass:prod',
     'csso:prod'
   ],
   prodCompile: [

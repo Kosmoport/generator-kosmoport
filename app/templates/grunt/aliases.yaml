@@ -16,5 +16,6 @@ prod:
  description: 'Compile for production'
  tasks:
   - 'concurrent:prodPrepare'
+  - 'concurrent:prodPreCompile'
   - 'concurrent:prodCompile'
   - img

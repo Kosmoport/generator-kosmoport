@@ -8,8 +8,8 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: 'app/pages/',
-      src: '*.html',
+      cwd: 'app/pages_с/',
+      src: '**/*.html',
       dest: 'dist/pages/'
     }]
   }
