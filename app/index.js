@@ -13,7 +13,7 @@ module.exports = yeoman.generators.Base.extend({
 
     this.log(yosay(
       'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
-    ));    
+    ));
     var prompts = [{
       type:'input',
       name: 'blocks',
@@ -53,13 +53,13 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_index.html'),
         this.destinationPath('index.html')
-      );  
+      );
       this.directory(
-        this.templatePath('grunt'), 
+        this.templatePath('grunt'),
         this.destinationPath('grunt')
       );
       this.directory(
-        this.templatePath('styles'), 
+        this.templatePath('styles'),
         this.destinationPath('app/styles')
       );
       this.mkdir('app');
