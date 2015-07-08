@@ -1,6 +1,6 @@
 {
   "name": "generator-kosmoport",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generator for our static sites",
   "license": "MIT",
   "main": "app/index.js",
@@ -10,11 +10,13 @@
     "email": "nikita@bayev.kz",
     "url": "https://github.com/drugoi"
   },
-  "contributors": [{
-    "name": "Daria Gorbovskaya",
-    "email": "melloo18@gmail.com",
-    "url": "https://github.com/lamantenok"
-  }],
+  "contributors": [
+    {
+      "name": "Daria Gorbovskaya",
+      "email": "melloo18@gmail.com",
+      "url": "https://github.com/lamantenok"
+    }
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
