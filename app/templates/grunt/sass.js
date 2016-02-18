@@ -10,7 +10,7 @@ module.exports = {
       cwd: 'app/styles',
       src: ['styles.scss'],
       dest: 'app/css/',
-      ext: '.css'
+      ext: '.min.css'
     }]
   },
   // Configure SASS for Production
