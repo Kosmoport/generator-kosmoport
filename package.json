@@ -1,20 +1,22 @@
 {
   "name": "generator-kosmoport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generator for our static sites",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "Kosmoport/generator-kosmoport",
   "author": {
-    "name": "Nikita Bayev", 
+    "name": "Nikita Bayev",
     "email": "nikita@bayev.kz",
     "url": "https://github.com/drugoi"
   },
-  "contributors": [{
-    "name": "Daria Gorbovskaya", 
-    "email": "melloo18@gmail.com",
-    "url": "https://github.com/lamantenok"
-  }],
+  "contributors": [
+    {
+      "name": "Daria Gorbovskaya",
+      "email": "melloo18@gmail.com",
+      "url": "https://github.com/lamantenok"
+    }
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
@@ -28,14 +30,12 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.22.5",
     "chalk": "^1.1.1",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.22.5",
     "yosay": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"
-  },
-  "peerDependencies": {
-    "yo": ">=1.0.0"
   }
 }

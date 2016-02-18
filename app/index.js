@@ -2,42 +2,43 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var mkdirp = require('mkdirp');
 
-module.exports = yeoman.generators.Base.extend({
-  initializing: function () {
+module.exports = yeoman.Base.extend({
+  initializing: function() {
     this.pkg = require('../package.json');
   },
 
-  prompting: function () {
+  prompting: function() {
     var done = this.async();
 
     this.log(yosay(
       'Welcome to the groundbreaking ' + chalk.green('Kosmoport') + ' generator!'
-    ));    
+    ));
     var prompts = [{
-      type:'input',
+      type: 'input',
       name: 'blocks',
-      message:  'What blocks you will use in your project? \n  Blocks:'
-    },];
+      message: 'What blocks you will use in your project? \n  Blocks:'
+    }];
 
-    this.prompt(prompts, function (props) {
-    this.blocks = props.blocks.split(' ');
-
+    this.prompt(prompts, function(props) {
+      this.blocks = props.blocks.split(' ');
       done();
     }.bind(this));
   },
 
   writing: {
     styleFiles: function() {
+      console.info('Started blocks');
       var blocks = [];
       for (var b in this.blocks) {
         this.write('app/styles/blocks/_' + this.blocks[b] + '.scss', '/* Block: ' + this.blocks[b] + '*/');
-        blocks.push('@import \'_'+ this.blocks[b] + '\';\n');
+        blocks.push('@import \'_' + this.blocks[b] + '\';\n');
       }
       blocks = blocks.toString().replace(/,/g, '');
       this.write('app/styles/blocks/blocks.scss', blocks);
     },
-    app: function () {
+    app: function() {
       this.fs.copy(
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
@@ -53,21 +54,21 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_index.html'),
         this.destinationPath('index.html')
-      );  
+      );
       this.directory(
-        this.templatePath('grunt'), 
+        this.templatePath('grunt'),
         this.destinationPath('grunt')
       );
       this.directory(
-        this.templatePath('styles'), 
+        this.templatePath('styles'),
         this.destinationPath('app/styles')
       );
-      this.mkdir('app');
-      this.mkdir('app/scripts');
-      this.mkdir('app/templates');
-      this.mkdir('app/images/icons');
-      this.mkdir('app/fonts');
-      this.mkdir('app/styles/blocks');
+      mkdirp('app');
+      mkdirp('app/scripts');
+      mkdirp('app/templates');
+      mkdirp('app/images/icons');
+      mkdirp('app/fonts');
+      mkdirp('app/styles/blocks');
     },
     projectfiles: function() {
       this.fs.copy(
@@ -81,7 +82,7 @@ module.exports = yeoman.generators.Base.extend({
     }
   },
 
-  install: function () {
+  install: function() {
     this.installDependencies({
       skipInstall: this.options['skip-install']
     });
